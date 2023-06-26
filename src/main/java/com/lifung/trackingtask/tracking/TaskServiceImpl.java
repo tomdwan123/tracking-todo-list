@@ -20,7 +20,7 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public void add(Task task) {
-        task.setStatus(TaskStatusEnum.BACK_LOG.toString());
+        task.setStatus(TaskStatusEnum.TODO.toString());
         String now = DateTimeUtils.simpleDateTimeFormat.format(new Date());
         task.setCreatedAt(now);
         task.setUpdatedAt(now);
